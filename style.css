@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Write CSS code below */
+body{
+    background-color: rgb(130, 142, 158);
+}
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px 700px;  
+}
+.left-section{
+    grid-column: span 1;
+    background-color: rgb(177, 182, 233);
+}
+.right-section{
+    grid-column: span 1/ span 2;
+    background-color: rgb(156, 222, 226);
+}
+.left-content{
+    padding: 1rem;
+}
+
+.profile-image{
+    width: 60%;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    display: block;
+    justify-content:center;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    letter-spacing: 0.02px;
+    text-transform: uppercase;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.social-media ul li.icon{
+   display: inline-block; 
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    color: darksalmon;
+    padding: 20px 20px 20px 20px;
+}
+.personal-details ul li.icon{
+    display: block; 
+    font-size: 15px;
+    color: rgb(13, 48, 241);
+    padding: 15px 10px 10px 10px;
+}
+.personal-details ul span.details{
+    content: "\2706";
+}
+.details{
+    color: darkslateblue;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px solid white;
+    background-color: rgb(255, 255, 255);
+    height: 4px;
+    margin: 10px 0px 10px 0px;
+}
+.right-section .right-main-content{
+    padding: 2rem 3rem 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.left_1 {
+    text-align: left;  
+}
+.right_1{
+    float: right;
+    text-align: right;
+}
+.left_2{
+    text-align: left;
+}
+.right_2{
+    float: right;
+    text-align: right;
+}
+.left_3{
+    text-align: left;
+}
+.right_3{
+    float: right;
+    text-align: right;
+}
+.left_4{
+    text-align: left;
+}
+.right_4{
+    float: right;
+    text-align: right;
+}
+.left_5{
+    text-align: left;
+}
+.right_5{
+    float: right;
+    text-align: right;
+}
+.left_6{
+    text-align: left;
+}
+.right_6{
+    float: right;
+    text-align: right;
+}.left_7{
+    text-align: left;
+}
+.right_7{
+    float: right;
+    text-align: right;
+}
+@media only screen and (max-width: 673px) {
+    .main-content{grid-template-columns: repeat(1, 1fr);}
+    
+}
